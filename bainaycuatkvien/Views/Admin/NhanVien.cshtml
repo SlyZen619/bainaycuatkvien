@@ -1,0 +1,117 @@
+﻿@model IEnumerable<bainaycuatkvien.Models.NHANVIEN>
+
+@{
+
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<h2>Quản lý nhân viên</h2>
+
+<a href="@Url.Action("addNhanVien", "Admin")"><button type="submit" class="btn btn-success m-2">Thêm Nhân Viên</button></a>
+<div class="container-fluid pt-4 px-4">
+    <div class="row g-4">
+        <div class="col-sm-12 col-xl-6">
+            
+                <table class="table">
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.TenNV)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.GioiTinh)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.NgaySinh)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.SDT)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.DiaChi)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Email)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Username)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Password)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.NgayVaoLam)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.NgayNghiViec)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.TrangThaiTK)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Luong)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.MaCong)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.PHANQUYEN.TenQuyen)
+                        </th>
+                        <th></th>
+                    </tr>
+
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.TenNV)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.GioiTinh)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.NgaySinh)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.SDT)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.DiaChi)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Email)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Username)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Password)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.NgayVaoLam)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.NgayNghiViec)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.TrangThaiTK)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Luong)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.MaCong)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.PHANQUYEN.TenQuyen)
+                            </td>
+                            <td>
+
+                                <a href="@Url.Action("CaLamViec", "Admin",new { id=item.MaNV })"><button type="submit" class="btn btn-success m-2">Ca làm việc</button></a>
+                            </td>
+                        </tr>
+                    }
+
+                </table>
+            
+        </div>
+    </div>
+</div>

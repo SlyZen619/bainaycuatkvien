@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="052d198ad68b42c99f999b98f3192a3a" Name="Diagram1">
+        <EntityTypeShape EntityType="QLSieuThiEMarketModel.CALAMVIEC" Width="1.5" PointX="6" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLSieuThiEMarketModel.CHAMCONG" Width="1.5" PointX="5.25" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLSieuThiEMarketModel.CTHOADON" Width="1.5" PointX="10.5" PointY="11.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLSieuThiEMarketModel.ctphieunhaphang" Width="1.5" PointX="10.5" PointY="15.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLSieuThiEMarketModel.CTPHIEUTRAHANG" Width="1.5" PointX="7.5" PointY="26.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLSieuThiEMarketModel.DSKHUYENMAI" Width="1.5" PointX="6" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLSieuThiEMarketModel.GIAOCA" Width="1.5" PointX="10.5" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLSieuThiEMarketModel.HANGHOA" Width="1.5" PointX="6" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLSieuThiEMarketModel.HOADON" Width="1.5" PointX="5.25" PointY="12" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLSieuThiEMarketModel.KHACHHANG" Width="1.5" PointX="3" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLSieuThiEMarketModel.KHUYENMAI" Width="1.5" PointX="8.25" PointY="10.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLSieuThiEMarketModel.MUCHANGKHACHHANG" Width="1.5" PointX="0.75" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLSieuThiEMarketModel.NHACUNGCAP" Width="1.5" PointX="3.75" PointY="16.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLSieuThiEMarketModel.NHANVIEN" Width="1.5" PointX="3" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLSieuThiEMarketModel.NHOMHANG" Width="1.5" PointX="3.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLSieuThiEMarketModel.PHANCA" Width="1.5" PointX="8.25" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLSieuThiEMarketModel.PHANQUYEN" Width="1.5" PointX="0.75" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLSieuThiEMarketModel.PHIEUNHAPHANG" Width="1.5" PointX="8.25" PointY="14.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLSieuThiEMarketModel.PHIEUTRAHANG" Width="1.5" PointX="5.25" PointY="26.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLSieuThiEMarketModel.sysdiagram" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="QLSieuThiEMarketModel.FK_GIAOCA_CALAMVIEC" ManuallyRouted="false" />
+        <AssociationConnector Association="QLSieuThiEMarketModel.FK_PHANCA_CALAMVIEC" ManuallyRouted="false" />
+        <AssociationConnector Association="QLSieuThiEMarketModel.FK_CHAMCONG_NHANVIEN" ManuallyRouted="false" />
+        <AssociationConnector Association="QLSieuThiEMarketModel.FK_CTHOADON_HANGHOA" ManuallyRouted="false" />
+        <AssociationConnector Association="QLSieuThiEMarketModel.FK_CTHOADON_HOADON" ManuallyRouted="false" />
+        <AssociationConnector Association="QLSieuThiEMarketModel.FK_CTHOADON_KHUYENMAI" ManuallyRouted="false" />
+        <AssociationConnector Association="QLSieuThiEMarketModel.FK_ctphieunhaphang_HANGHOA" ManuallyRouted="false" />
+        <AssociationConnector Association="QLSieuThiEMarketModel.FK_ctphieunhaphang_PHIEUNHAPHANG" ManuallyRouted="false" />
+        <AssociationConnector Association="QLSieuThiEMarketModel.FK_CTPHIEUTRAHANG_HANGHOA" ManuallyRouted="false" />
+        <AssociationConnector Association="QLSieuThiEMarketModel.FK_CTPHIEUTRAHANG_PHIEUTRAHANG" ManuallyRouted="false" />
+        <AssociationConnector Association="QLSieuThiEMarketModel.FK_KHUYENMAI_DSKHUYENMAI" ManuallyRouted="false" />
+        <AssociationConnector Association="QLSieuThiEMarketModel.FK_GIAOCA_PHANCA" ManuallyRouted="false" />
+        <AssociationConnector Association="QLSieuThiEMarketModel.FK_HANGHOA_NHACUNGCAP" ManuallyRouted="false" />
+        <AssociationConnector Association="QLSieuThiEMarketModel.FK_HANGHOA_NHOMHANG" ManuallyRouted="false" />
+        <AssociationConnector Association="QLSieuThiEMarketModel.FK_KHUYENMAI_HANGHOA" ManuallyRouted="false" />
+        <AssociationConnector Association="QLSieuThiEMarketModel.FK_HOADON_KHACHHANG" ManuallyRouted="false" />
+        <AssociationConnector Association="QLSieuThiEMarketModel.FK_HOADON_NHANVIEN" ManuallyRouted="false" />
+        <AssociationConnector Association="QLSieuThiEMarketModel.FK_KHACHHANG_MUCHANGKHACHHANG" ManuallyRouted="false" />
+        <AssociationConnector Association="QLSieuThiEMarketModel.FK_KHUYENMAI_NHANVIEN" ManuallyRouted="false" />
+        <AssociationConnector Association="QLSieuThiEMarketModel.FK_PHIEUNHAPHANG_NHACUNGCAP" ManuallyRouted="false" />
+        <AssociationConnector Association="QLSieuThiEMarketModel.FK_NHANVIEN_PHANQUYEN" ManuallyRouted="false" />
+        <AssociationConnector Association="QLSieuThiEMarketModel.FK_PHANCA_NHANVIEN" ManuallyRouted="false" />
+        <AssociationConnector Association="QLSieuThiEMarketModel.FK_PHIEUNHAPHANG_NHANVIEN" ManuallyRouted="false" />
+        <AssociationConnector Association="QLSieuThiEMarketModel.FK_PHIEUTRAHANG_NHANVIEN" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

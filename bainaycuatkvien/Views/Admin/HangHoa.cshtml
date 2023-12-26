@@ -1,0 +1,99 @@
+﻿@model IEnumerable<bainaycuatkvien.Models.HANGHOA>
+@{
+
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Quản Lý Hàng Hóa</h2>
+
+<a href="@Url.Action("addHangHoa", "Admin")"><button type="submit" class="btn btn-success m-2">Thêm Hàng Hóa</button></a>
+<a href="@Url.Action("xuatHangHoa", "Admin")"><button type="submit" class="btn btn-success m-2">Xuất Hàng Hóa</button></a>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.TenHH)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NHOMHANG.TenNH)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.XuatXu)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GiaNhap)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GiaBan)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DonViTinh)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MaVach)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DinhMuc)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SoLuong)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TrangThaiBan)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.VAT)
+        </th>
+
+
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.TenHH)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NHOMHANG.TenNH)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.XuatXu)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GiaNhap)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GiaBan)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DonViTinh)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MaVach)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DinhMuc)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SoLuong)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TrangThaiBan)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VAT)
+            </td>
+
+
+            <td>
+
+                <a href="@Url.Action("Xoahanghoa", "Admin",new { id = item.MaHH })"><button type="submit" class="btn btn-success m-2">xóa</button></a>
+
+            </td>
+        </tr>
+    }
+
+</table>
+
+

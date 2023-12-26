@@ -1,0 +1,77 @@
+﻿@model IEnumerable<bainaycuatkvien.Models.KHACHHANG>
+
+@{
+    
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+            <h2>Quản lý khách hàng</h2>
+
+            <a href="@Url.Action("addKhachHang", "Admin")"><button type="submit" class="btn btn-success m-2">Thêm Khách Hàng</button></a>
+            <table class="table">
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.TenKH)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.CMND)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.DiaChi)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.SDT)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Diem)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.NgayTao)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.NamGanBo)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.MUCHANGKHACHHANG.TenMucHang)
+                    </th>
+                    <th></th>
+                </tr>
+
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.TenKH)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.CMND)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.DiaChi)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.SDT)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Diem)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.NgayTao)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.NamGanBo)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.MUCHANGKHACHHANG.TenMucHang)
+                        </td>
+                        <td>
+
+                            <a href="@Url.Action("Xoakhachhang", "Admin", new { id = item.MaKH })"><button type="submit" class="btn btn-success m-2">Xóa</button></a>
+
+                        </td>
+                    </tr>
+                }
+
+            </table>
+            
